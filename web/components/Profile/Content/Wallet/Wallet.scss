@@ -1,0 +1,53 @@
+.wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  text-align: center;
+  flex-direction: column;
+
+  p {
+  }
+
+  h1 {
+    background-color: #f1f1f1;
+    padding: 8px;
+    color: #03a9f4;
+  }
+
+  .add-wallet {
+    margin-top: 21px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 425px) {
+      > div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    input,
+    button {
+      height: 100%;
+    }
+
+    input {
+      width: 250px;
+      border: 0px;
+      background-color: #f1f1f1;
+      outline: none;
+      font-size: 13px;
+      padding: 5px 8px;
+      @media (max-width: 425px) {
+        margin-bottom: 8px;
+      }
+    }
+
+    button {
+      background-color: #03a9f4;
+      color: #fff;
+      border: 0px;
+      font-size: 14px;
+      padding: 5px 20px;
+    }
+  }
+}

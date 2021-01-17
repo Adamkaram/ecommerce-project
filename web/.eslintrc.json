@@ -1,0 +1,98 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/@typescript-eslint", 
+    "plugin:node/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended", 
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended" 
+  ],
+  "plugins": ["prettier"],
+  "parser": "@typescript-eslint/parser",
+
+  "rules": {
+    "react/prefer-stateless-function": "error",
+    "no-underscore-dangle": "off",
+    "import/extensions": "off",
+    "import/order": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "prettier/prettier": "error",
+    "no-param-reassign": "warn",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      { "variables": false }
+    ],
+   
+    "node/no-missing-import": [
+      "error",
+      {
+        "allowModules": [],
+        "tryExtensions": [".js", ".ts", ".node", ".tsx"]
+      }
+    ],
+    "func-names": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx"] }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "node/no-unsupported-features/es-syntax": "off",
+    "global-require": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/button-has-type": "warn",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/camelcase": "warn",
+    "eqeqeq": "warn",
+    "no-plusplus": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "camelcase": "warn"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {},
+      "react": {
+        "version": "detect"
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "globalReturn": true,
+      "generators": false,
+      "objectLiteralDuplicateProperties": false,
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  }
+}

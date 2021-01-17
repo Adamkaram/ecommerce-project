@@ -1,0 +1,6 @@
+front
+/front/app
+node_modules
+.env
+.idea
+.next

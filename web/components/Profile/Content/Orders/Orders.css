@@ -1,0 +1,261 @@
+.orders {
+  padding: 8px;
+}
+
+.orders .head {
+  background-color: #f1f1f1;
+  margin: 0px;
+  padding: 8px;
+}
+
+.orders .head h3 {
+  font-size: 21px;
+  margin: 0px;
+}
+
+.orders .head p {
+  font-size: 13px;
+  color: #7e859b;
+  margin-bottom: 0px;
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+
+.orders .body .one-order {
+  margin-top: 19px;
+}
+
+.orders .body .one-order .header {
+  background-color: #ddfdff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+}
+
+.orders .body .one-order .header h6,
+.orders .body .one-order .header p {
+  margin: 0px;
+}
+
+.orders .body .one-order .header h6 {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.orders .body .one-order .header p {
+  color: #7e859b;
+  font-size: 12px;
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+
+.orders .body .one-order .more-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 25% 1fr;
+      grid-template-columns: 1fr 25% 1fr;
+}
+
+@media (max-width: 575px) {
+  .orders .body .one-order .more-details {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.orders .body .one-order .more-details > div {
+  margin-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .orders .body .one-order .more-details > div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+  }
+}
+
+.orders .body .one-order .more-details > div h6 {
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.orders .body .one-order .more-details > div h6 button {
+  background-color: transparent;
+  border: 0px;
+  color: blue;
+  font-size: 13px;
+}
+
+.orders .body .one-order .more-details > div * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.orders .body .one-order .more-details .location-order div:first-of-type p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.orders .body .one-order .more-details .location-order div:first-of-type span {
+  font-size: 13px;
+  color: #7e859b;
+}
+
+.orders .body .one-order .more-details .location-order div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+  .orders .body .one-order .more-details .location-order div:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.orders .body .one-order .more-details .location-order div:last-of-type p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7e859b;
+  font-weight: 400;
+}
+
+.orders .body .one-order .more-details .location-order div:last-of-type p svg {
+  color: #21bf73;
+}
+
+.orders .body .one-order .more-details .location-order div:last-of-type p:first-of-type {
+  -webkit-margin-end: 6px;
+          margin-inline-end: 6px;
+  color: #000;
+}
+
+.orders .body .one-order .more-details .pay-way p {
+  font-size: 14px;
+}
+
+.orders .body .one-order .more-details .order-price ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.orders .body .one-order .more-details .order-price ul li:last-of-type {
+  text-align: left;
+  color: #7e859b;
+}
+
+.orders .body .one-order .more-details .order-price ul li {
+  font-size: 13px;
+}
+
+.orders .body .one-order .more-details .order-price .order-all-price,
+.orders .body .one-order .more-details .order-price .order-credit {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+}
+
+@media (max-width: 575px) {
+  .orders .body .one-order .more-details .order-price .order-all-price,
+  .orders .body .one-order .more-details .order-price .order-credit {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+}
+
+.orders .body .one-order .more-details .order-price .order-all-price li:first-of-type,
+.orders .body .one-order .more-details .order-price .order-credit li:first-of-type {
+  font-weight: 900;
+}
+
+.orders .body .one-order .order-products {
+  margin-top: 21px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.orders .body .one-order .order-products .order-product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 18% 1fr 1fr;
+      grid-template-columns: 18% 1fr 1fr;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .orders .body .one-order .order-products .order-product {
+    -ms-grid-columns: 25% 1fr 1fr;
+        grid-template-columns: 25% 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .orders .body .one-order .order-products .order-product {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.orders .body .one-order .order-products .order-product > div {
+  padding: 8px 0px;
+}
+
+@media (max-width: 500px) {
+  .orders .body .one-order .order-products .order-product > div {
+    padding: 8px;
+  }
+}
+
+.orders .body .one-order .order-products .order-product img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.orders .body .one-order .order-products .order-product .container-content * {
+  margin: 0px;
+}
+
+.orders .body .one-order .order-products .order-product .container-content p {
+  font-size: 13px;
+  color: #7e859b;
+}
+
+.orders .body .one-order .order-products .order-product .container-content h6 {
+  font-size: 15px;
+  margin: 5px 0px;
+}
+
+.orders .body .one-order .order-products .order-product .container-content span {
+  font-size: 12px;
+  color: #7e859b;
+}
+
+.orders .body .one-order .order-products .order-product .container-price * {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .orders .body .one-order .order-products .order-product .container-price * {
+    text-align: right;
+  }
+}
+
+.orders .body .one-order .order-products .order-product .container-price h6 {
+  font-weight: 800;
+}
+
+.orders .body .one-order .order-products .order-product .container-price p {
+  color: #7e859b;
+  font-size: 14px;
+}
+/*# sourceMappingURL=Orders.css.map */

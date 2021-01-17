@@ -1,0 +1,80 @@
+.user-profile {
+  .user-profile-header {
+    padding: 8px;
+    background-color: #eee;
+    * {
+      margin: 0px;
+    }
+    h4 {
+      color: #263238;
+      font-weight: 800;
+      font-size: 21px;
+    }
+    p {
+      color: #63707e;
+      font-size: 13px;
+    }
+  }
+
+  @keyframes toggle {
+    from {
+      border: 1px solid rgba(255, 214, 10, 1);
+    }
+    to {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .profile-card {
+    padding: 15px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    .header {
+      margin-bottom: 12px;
+      h5 {
+        font-size: 17px;
+        font-weight: 900;
+      }
+    }
+    .content {
+      .new-row {
+        margin-left: 8px;
+
+        input {
+          &::placeholder {
+            font-size: 13px;
+          }
+        }
+
+        select {
+          font-size: 13px;
+          padding: 0.2rem 0.75rem;
+          option {
+          }
+        }
+      }
+
+      .group-button {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          border: 0px;
+          width: 100px;
+          padding: 6px 15px;
+          margin-top: 30px;
+        }
+      }
+      .privacy {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 500px) {
+          flex-direction: column;
+        }
+        button {
+          border: 0px;
+          width: 100px;
+          padding: 6px 15px;
+        }
+      }
+    }
+  }
+}

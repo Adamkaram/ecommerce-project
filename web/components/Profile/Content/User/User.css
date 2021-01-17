@@ -1,0 +1,117 @@
+.user-profile .user-profile-header {
+  padding: 8px;
+  background-color: #eee;
+}
+
+.user-profile .user-profile-header * {
+  margin: 0px;
+}
+
+.user-profile .user-profile-header h4 {
+  color: #263238;
+  font-weight: 800;
+  font-size: 21px;
+}
+
+.user-profile .user-profile-header p {
+  color: #63707e;
+  font-size: 13px;
+}
+
+@-webkit-keyframes toggle {
+  from {
+    border: 1px solid #ffd60a;
+  }
+  to {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes toggle {
+  from {
+    border: 1px solid #ffd60a;
+  }
+  to {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.user-profile .profile-card {
+  padding: 15px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.user-profile .profile-card .header {
+  margin-bottom: 12px;
+}
+
+.user-profile .profile-card .header h5 {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.user-profile .profile-card .content .new-row {
+  margin-left: 8px;
+}
+
+.user-profile .profile-card .content .new-row input::-webkit-input-placeholder {
+  font-size: 13px;
+}
+
+.user-profile .profile-card .content .new-row input:-ms-input-placeholder {
+  font-size: 13px;
+}
+
+.user-profile .profile-card .content .new-row input::-ms-input-placeholder {
+  font-size: 13px;
+}
+
+.user-profile .profile-card .content .new-row input::placeholder {
+  font-size: 13px;
+}
+
+.user-profile .profile-card .content .new-row select {
+  font-size: 13px;
+  padding: 0.2rem 0.75rem;
+}
+
+.user-profile .profile-card .content .group-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.user-profile .profile-card .content .group-button button {
+  border: 0px;
+  width: 100px;
+  padding: 6px 15px;
+  margin-top: 30px;
+}
+
+.user-profile .profile-card .content .privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .user-profile .profile-card .content .privacy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.user-profile .profile-card .content .privacy button {
+  border: 0px;
+  width: 100px;
+  padding: 6px 15px;
+}
+/*# sourceMappingURL=User.css.map */

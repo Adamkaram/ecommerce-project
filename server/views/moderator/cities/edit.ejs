@@ -1,0 +1,26 @@
+<%- include('../layouts/head.ejs')%> <%- include('../layouts/header.ejs')%> <%-
+include('../layouts/side.ejs')%>
+<div class="block-header">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h2>
+        المدن
+        <small>اضافة مدينة</small>
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12">
+    <div class="card">
+      <div class="header">
+        <h2>مدينة <strong>اضافة</strong></h2>
+      </div>
+      <div class="body">
+        <m-edit-city city="<%= city%>"></m-edit-city>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../layouts/footer.ejs') %>

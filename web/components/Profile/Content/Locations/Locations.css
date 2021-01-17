@@ -1,0 +1,271 @@
+.location .map-section {
+  position: relative;
+  padding-top: 44px;
+}
+
+.location .map-section .map {
+  position: relative;
+}
+
+.location .map-section .map-search {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 999999;
+  left: 0%;
+}
+
+.location .map-section .map-search > input {
+  height: 100%;
+  border: 0px;
+  width: 100%;
+  outline: none;
+  text-indent: 8px;
+  padding: 8px 0px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.location .map-section .map-search .search-result {
+  background-color: #fff;
+  display: none;
+}
+
+.location .map-section .map-search .search-result ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.location .map-section .map-search .search-result ul li {
+  font-size: 13px;
+  padding: 6px 8px;
+}
+
+.location .map-section .map-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.location .about-location {
+  padding: 8px;
+}
+
+.location .about-location .head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 8px;
+  margin: 0px -8px;
+  padding-bottom: 16px;
+}
+
+.location .about-location .head p {
+  font-weight: 800;
+  font-size: 14px;
+  margin: 0px;
+  color: #2e279d;
+}
+
+.location .about-location .head p svg {
+  font-size: 13px;
+}
+
+.location .about-location .about-location-content .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 8px;
+  background-color: #f1f1f1;
+  margin: 0px -8px;
+}
+
+.location .about-location .about-location-content .header h6 {
+  font-weight: 900;
+}
+
+.location .about-location .about-location-content .header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location .about-location .about-location-content .header > div p {
+  margin: 0px;
+  margin-right: 12px;
+  font-size: 13px;
+}
+
+.location .about-location .about-location-content .center {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 12px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 575px) {
+  .location .about-location .about-location-content .center {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.location .about-location .about-location-content .center > div {
+  padding-top: 23px;
+}
+
+.location .about-location .about-location-content .center > div > h6 {
+  padding: 12px 0px;
+  font-weight: 900;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20%;
+      grid-template-columns: 1fr 20%;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .data > p {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .data > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .data > div p {
+  margin: 0px;
+  font-size: 12px;
+  color: #404553;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .data > div svg {
+  font-size: 10px;
+  margin-left: 10px;
+  color: #404553;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .mini-map {
+  position: relative;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .mini-map img {
+  width: 100%;
+}
+
+.location .about-location .about-location-content .center .right .more-details .edit-location .mini-map p {
+  position: absolute;
+  margin: 0px;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+  bottom: 0px;
+  width: 100%;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-more-details {
+  margin-top: 19px;
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-more-details input {
+  width: 100%;
+  font-size: 13px;
+  padding: 8px;
+  outline: none;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 500px) {
+  .location .about-location .about-location-content .center .right .more-details .add-more-details input {
+    font-size: 11px;
+  }
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 21px;
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-work > div p {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-work > div span {
+  font-size: 11px;
+  color: #404553;
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-work > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location .about-location .about-location-content .center .right .more-details .add-work > form label {
+  margin: 0px;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.location .about-location .about-location-content .center .left > div .mb-3.input-group.input-group-sm {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.location .about-location .about-location-content .center .left > div .form-group label {
+  font-size: 14px;
+}
+
+.location .about-location .about-location-content .center .left > div .form-group input {
+  padding: 4px;
+  text-indent: 6px;
+  height: auto;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.location .about-location .about-location-content .center .left > div .button-save button {
+  padding: 8px;
+  width: 120px;
+  float: left;
+}
+/*# sourceMappingURL=Locations.css.map */

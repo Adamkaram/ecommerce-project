@@ -1,0 +1,41 @@
+.delayed {
+  padding: 8px;
+}
+
+.delayed > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.delayed > div .product {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.delayed > div .product h6 {
+  font-size: 15px;
+  color: #999;
+}
+
+.delayed > div .product p {
+  font-size: 14px;
+}
+
+.delayed > div .product dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.delayed > div .product dt {
+  -webkit-margin-end: 6px;
+          margin-inline-end: 6px;
+}
+/*# sourceMappingURL=Delayed.css.map */

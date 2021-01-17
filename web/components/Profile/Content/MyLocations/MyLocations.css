@@ -1,0 +1,110 @@
+.my-locations {
+  padding: 8px;
+}
+
+.my-locations .head {
+  background-color: #f1f1f1;
+  margin: 0px;
+  padding: 8px;
+}
+
+.my-locations .head h3 {
+  font-size: 21px;
+  margin: 0px;
+}
+
+.my-locations .head p {
+  font-size: 13px;
+  color: #7e859b;
+  margin-bottom: 0px;
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+
+.my-locations .no-locations {
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.my-locations .no-locations p {
+  font-size: 14px;
+}
+
+.my-locations .no-locations button {
+  border: 0px;
+  width: 150px;
+  padding: 6px 15px;
+}
+
+.my-locations .real-location {
+  margin-top: 30px;
+}
+
+.my-locations .real-location .one-location {
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+.my-locations .real-location .one-location .header {
+  background-color: #eee;
+  margin: -6px;
+  padding: 6px;
+}
+
+.my-locations .real-location .one-location .header h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.my-locations .real-location .one-location .body {
+  margin-top: 18px;
+}
+
+.my-locations .real-location .one-location .body > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-gap: 19px;
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .my-locations .real-location .one-location .body > div {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .my-locations .real-location .one-location .body > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.my-locations .real-location .one-location .body > div p:first-of-type {
+  font-size: 13px;
+  color: #7e859b;
+  margin: 6px 0px;
+}
+
+.my-locations .real-location .one-location .body > div p:last-of-type {
+  font-size: 13px;
+  color: #212121;
+}
+
+.my-locations .real-location .one-location .body button {
+  padding: 3px 15px;
+  font-size: 13px;
+  width: 100%;
+  margin: 4px;
+}
+
+@media (max-width: 600px) {
+  .my-locations .real-location .one-location .body button {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=MyLocations.css.map */

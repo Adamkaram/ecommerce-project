@@ -1,0 +1,217 @@
+.orders {
+  padding: 8px;
+  .head {
+    background-color: #f1f1f1;
+    margin: 0px;
+    padding: 8px;
+    h3 {
+      font-size: 21px;
+      margin: 0px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #7e859b;
+      margin-bottom: 0px;
+      margin-inline-start: 8px;
+    }
+  }
+
+  .body {
+    .one-order {
+      margin-top: 19px;
+      .header {
+        background-color: #ddfdff;
+        display: flex;
+        padding: 8px;
+
+        h6,
+        p {
+          margin: 0px;
+        }
+
+        h6 {
+          font-weight: 900;
+          font-size: 15px;
+        }
+
+        p {
+          color: #7e859b;
+          font-size: 12px;
+          margin-inline-start: 8px;
+        }
+      }
+
+      .more-details {
+        display: grid;
+        grid-template-columns: 1fr 25% 1fr;
+        @media (max-width: 575px) {
+          grid-template-columns: 1fr;
+        }
+        > div {
+          margin-top: 15px;
+          @media (max-width: 575px) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 15px;
+          }
+          h6 {
+            font-weight: 900;
+            margin-bottom: 12px;
+
+            button {
+              background-color: transparent;
+              border: 0px;
+              color: blue;
+              font-size: 13px;
+            }
+          }
+
+          * {
+            margin: 0px;
+            padding: 0px;
+          }
+        }
+
+        .location-order {
+          div:first-of-type {
+            p {
+              font-size: 14px;
+              font-weight: 600;
+            }
+
+            span {
+              font-size: 13px;
+              color: #7e859b;
+            }
+          }
+
+          div:last-of-type {
+            display: flex;
+            margin-top: 12px;
+
+            @media (max-width: 767px) {
+              flex-direction: column;
+            }
+            p {
+              font-size: 13px;
+              font-weight: 600;
+              color: #7e859b;
+              font-weight: 400;
+              svg {
+                color: #21bf73;
+              }
+            }
+
+            p:first-of-type {
+              margin-inline-end: 6px;
+              color: #000;
+            }
+          }
+        }
+
+        .pay-way {
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .order-price {
+          ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin: 10px 0px;
+            li:last-of-type {
+              text-align: left;
+              color: #7e859b;
+            }
+
+            li {
+              font-size: 13px;
+            }
+          }
+
+          .order-all-price,
+          .order-credit {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: 12px;
+            @media (max-width: 575px) {
+              border-top: 1px solid rgba(0, 0, 0, 0.06);
+            }
+            li:first-of-type {
+              font-weight: 900;
+            }
+          }
+        }
+      }
+
+      .order-products {
+        margin-top: 21px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .order-product {
+          display: grid;
+          grid-template-columns: 18% 1fr 1fr;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+          @media (max-width: 767px) {
+            grid-template-columns: 25% 1fr 1fr;
+          }
+
+          @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+          }
+          > div {
+            padding: 8px 0px;
+            @media (max-width: 500px) {
+              padding: 8px;
+            }
+          }
+
+          img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+          }
+
+          .container-content {
+            * {
+              margin: 0px;
+            }
+            p {
+              font-size: 13px;
+              color: #7e859b;
+            }
+
+            h6 {
+              font-size: 15px;
+              margin: 5px 0px;
+            }
+
+            span {
+              font-size: 12px;
+              color: #7e859b;
+            }
+          }
+
+          .container-price {
+            * {
+              text-align: center;
+              @media (max-width: 500px) {
+                text-align: right;
+              }
+            }
+
+            h6 {
+              font-weight: 800;
+            }
+
+            p {
+              color: #7e859b;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.points {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > div {
+    margin-bottom: 15px;
+    padding: 10px;
+
+    svg{
+        font-size: 60px;
+        color: #03a9f4;
+    }
+  }
+
+  h1 {
+      font-size: 28px;
+    span {
+      color: #03a9f4;
+      font-weight: 900;
+    }
+  }
+}

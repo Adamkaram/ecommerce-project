@@ -1,0 +1,13 @@
+<%- include('../layouts/head.ejs')%> <%- include('../layouts/header.ejs')%> <%-
+include('../layouts/side.ejs')%>
+<div class="block-header">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h2>
+        <small>التحكم في الطلب <%= id %></small>
+      </h2>
+    </div>
+  </div>
+</div>
+<m-show-order o="<%= order %>"></m-show-order>
+<%- include('../layouts/footer.ejs') %>

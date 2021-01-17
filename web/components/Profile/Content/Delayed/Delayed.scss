@@ -1,0 +1,30 @@
+.delayed {
+  padding: 8px;
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    .product {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 6px;
+      padding-top: 10px;
+      position: relative;
+      h6 {
+        font-size: 15px;
+        color: #999;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      dl {
+        display: flex;
+      }
+
+      dt {
+        margin-inline-end: 6px;
+      }
+    }
+  }
+}

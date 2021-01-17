@@ -1,0 +1,94 @@
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+  <div class="tab-content">
+    <div class="tab-pane stretchRight active" id="dashboard">
+      <div class="menu">
+        <ul class="list">
+          <li class="header">لوحة التحكم</li>
+          <% if(user.rules.includes("CAN_MANAGE_ORDERS")) { %>
+          <li>
+            <a href="/moderator/order" class=""><i class=" zmdi zmdi-shopping-cart"></i><span>الطلبات</span></a>
+          </li>
+          <% } %>
+          <% if(user.rules.includes("CAN_MANAGE_DELAYED")) { %>
+          <li>
+            <a href="/moderator/delayed-order" class=""
+              ><i class=" zmdi zmdi-shopping-cart"></i><span>الطلبات المؤجلة</span></a
+            >
+          </li>
+          <% } %>
+
+          <% if(user.rules.includes("CAN_CREATE_SLIDERS")) { %>
+          <li>
+            <a href="/moderator/slider" class=""><i class=" zmdi zmdi-collection-image"></i><span>السلايدر</span></a>
+          </li>
+          <li>
+            <a href="/moderator/slider/second" class=""><i
+                class=" zmdi zmdi-collection-image"></i><span>2السلايدر</span></a>
+          </li>
+          <li>
+            <a href="/moderator/banner" class=""><i class=" zmdi zmdi-collection-image"></i><span>البنرات
+                الثابتة</span></a>
+          </li>
+          <% } %>
+
+          <% if(user.rules.includes("CAN_CREAT_PRODUCT")) { %>
+          <li>
+            <a href="javascript:void(0);" class=" menu-toggle"><i class=" zmdi zmdi-store"></i><span>المنتجات</span></a>
+            <ul class="ml-menu">
+              <li><a href="/moderator/product/">كافة المنتجات</a></li>
+              <li><a href="/moderator/product/create">اضافة منتج</a></li>
+            </ul>
+          </li>
+          <% } %>
+
+
+          <% if(user.rules.includes("CAN_MANAGE_CARDS")) { %>
+          <li>
+            <a href="javascript:void(0);" class=" menu-toggle"><i class=" zmdi zmdi-card"></i><span>البطاقات</span></a>
+            <ul class="ml-menu">
+              <li>
+                <a href="javascript:void(0);" class=" menu-toggle"><i class=" zmdi zmdi-labels"></i><span>اقسام
+                    البطاقات</span></a>
+                <ul class="ml-menu">
+                  <li><a href="/moderator/card/category/">كافة الاقسام</a></li>
+                  <li>
+                    <a href="/moderator/card/category/create">اضافة قسم</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class=" menu-toggle"><i
+                    class=" zmdi zmdi-card"></i><span>البطاقات</span></a>
+                <ul class="ml-menu">
+                  <li><a href="/moderator/card/card/">كافة البطاقات</a></li>
+                  <li><a href="/moderator/card/card/create">اضافة بطاقة</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <% } %>
+         
+
+          <% if(user.rules.includes("CAN_CREATE_COUPONS")) { %>
+
+          <li>
+            <a href="javascript:void(0);" class=" menu-toggle"><i class=" zmdi zmdi-labels"></i><span>كوبونات الخصم
+              </span></a>
+            <ul class="ml-menu">
+              <li><a href="/moderator/coupon/">كافة الكوبونات</a></li>
+              <li><a href="/moderator/coupon/create">اضافة كوبون</a></li>
+            </ul>
+          </li>
+          <% } %>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<div id="app">
+  <section class="content ecommerce-page">

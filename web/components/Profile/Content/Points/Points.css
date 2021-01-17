@@ -1,0 +1,36 @@
+.points {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.points > div {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.points > div svg {
+  font-size: 60px;
+  color: #03a9f4;
+}
+
+.points h1 {
+  font-size: 28px;
+}
+
+.points h1 span {
+  color: #03a9f4;
+  font-weight: 900;
+}
+/*# sourceMappingURL=Points.css.map */
